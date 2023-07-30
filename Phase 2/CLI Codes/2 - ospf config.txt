@@ -1,0 +1,50 @@
+Switch(config)#ip routing
+Switch(config)#
+Switch(config)#router ospf 10
+
+Then assign router ids (1.1.1.1 ..... etc)
+
+Switch(config-router)#
+Switch(config-router)#router-id 1.1.1.1
+Switch(config-router)#
+Switch(config-router)#ex
+Switch(config)#ex
+Switch#
+Switch#show ip ospf
+.
+.
+.
+Switch(config)#router ospf 10
+Switch(config-router)#
+Switch(config-router)#passive-interface default
+(We are locking all interfaces by doing this. Later on we will unlock only the required interfaces.)
+
+Switch(config-router)#
+Switch(config-router)#no passive-interface (Type the interfaces to which we allow ospf)
+
+Now advertise
+
+(Advertise all the connected networks)
+(For small backbones like this use the same area. Eg.Area 0)
+Switch(config-router)#network <ip address> <wildcard mask> <area>
+.
+.
+.
+.
+Config OSPF like this for all L3 switches
+.
+.
+.
+.
+
+Switch(config-router)#do wr
+(Now only it will get saved)
+.
+.
+.
+Switch#wr
+(Save all changes to switch)
+.
+.
+.
+Switch#

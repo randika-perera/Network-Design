@@ -1,0 +1,23 @@
+Switch>en
+
+Switch#
+Switch#
+Switch#conf t
+
+Switch(config)#
+Switch(config)#int gig 1/1/1
+
+Switch(config-if)#
+Switch(config-if)#no switchport
+
+Switch(config-if)#ip address <ip address> <subnet mask> 
+
+Switch(config-if)#ex
+
+Switch(config)#ex
+
+Switch#show ip interface brief
+
+
+
+
