@@ -1,7 +1,7 @@
 
 # Network Design
 
-This repository contains the materials related to the Network Design Assignment carried out as a fulfillment for the module EN2150: Communication Network Engineering, which was carried out in two phases. The assignment involved designing the Local Area Network (LAN) for the ENTC Department and designing the Backbone Network for University of Moratuwa (UOM) and simulating the network using Cisco Packet Tracer.
+This repository contains the materials related to the Network Design Project carried out as a fulfillment for the module EN2150: Communication Network Engineering, which was carried out in two phases. The project involved designing the Local Area Network (LAN) for the ENTC Department and designing the Backbone Network for University of Moratuwa (UOM) and simulating the network using Cisco Packet Tracer.
 
 ## Phase 1: Backbone Network Design & LAN Design 
 
